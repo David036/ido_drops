@@ -1,0 +1,42 @@
+.header {
+  background-color: #f6f6f6;
+  .logoContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .logoSection {
+      display: flex;
+      box-shadow: 0 0 rgb(0 0 0 / 10%);
+      max-width: 1140px;
+      width: 100%;
+      padding: 6px 15px;
+    }
+  }
+  .headerContainer {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+
+    .valuteSection {
+      display: flex;
+      column-gap: 15px;
+      color: rgba(56, 56, 56, 0.5);
+      font-size: var(--text-xs);
+      font-weight: var(--bold);
+      line-height: 1.23;
+      padding: 9px 0;
+      .btc {
+        display: inline-block;
+        flex-wrap: nowrap;
+        span:nth-child(2) {
+          color: var(--red_700);
+        }
+      }
+      .eth {
+        display: inline-block;
+        flex-wrap: nowrap;
+        span:nth-child(2) {
+          color: var(--green_700);
+        }
+      }
+    }
+  }
+}
